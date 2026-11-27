@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATTERVERSE | Chemistry Quiz</title>
+<link rel="stylesheet" href="./CSS/Quiz.css">
+<link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg position-sticky top-0 noto-serif-myanmar-regular">
+      <div class="container-fluid">
+        <img src="./Photo/MATTERVERSE Logo.png" alt="" class="logo">
+        <!-- <a class="logo text-decoration-none" href="./index.html">MATTER<span style="color: #F2C14E;">VERSE</span></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-text" aria-current="page" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="./Explorer Matter.html">Explorer Matter</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="./Explorer Matter.html#solution">Solution</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="./Quiz.html">Quiz</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Another
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Reference</a></li>
+                <li><a class="dropdown-item" href="#">Draft form</a></li>
+                <li><a class="dropdown-item" href="#">Actknowladge</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">About Me</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="nav-tag">GRADE 10 CHEMISTRY · CHAPTER 02</div>
+      </div>
+  </nav>
+
+<main class="container mt-5" style="width: 70%;">
+
+  <header class="heading">
+    <div class="tag">✦ INTERACTIVE LEARNING</div>
+    <h1>Chemistry <span>Quiz</span></h1>
+    <p>Test your knowledge and challenge yourself.<br>
+    Choose your quiz type and start learning!</p>
+  </header>
+
+  <!-- CATEGORY SCREEN -->
+  <section class="screen active" id="homeScreen">
+    <div class="category-grid">
+
+      <button class="category" onclick="startQuiz('tf')">
+        <div class="icon">✓</div>
+        <h3>True or False</h3>
+        <p>Decide whether each chemistry statement is true or false.</p>
+        <div class="count">05 QUESTIONS →</div>
+      </button>
+
+      <button class="category" onclick="startQuiz('fill')">
+        <div class="icon">✎</div>
+        <h3>Fill in the Blank</h3>
+        <p>Complete the sentences by entering the correct answer.</p>
+        <div class="count">05 QUESTIONS →</div>
+      </button>
+
+      <button class="category" onclick="startQuiz('mcq')">
+        <div class="icon">☷</div>
+        <h3>Multiple Choice</h3>
+        <p>Select the correct answer from the given choices.</p>
+        <div class="count">05 QUESTIONS →</div>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- QUIZ SCREEN -->
+  <section class="screen" id="quizScreen">
+    <div class="quiz-box">
+
+      <div class="quiz-top">
+        <div class="type-label" id="typeLabel">TRUE OR FALSE</div>
+        <div class="counter">
+          Question <span id="current">1</span> /
+          <span id="total">5</span>
+        </div>
+      </div>
+
+      <div class="progress-bg">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="question" id="question">
+        Question goes here
+      </div>
+
+      <div class="answers" id="answers"></div>
+
+      <div class="feedback" id="feedback"></div>
+
+      <div class="controls">
+        <button class="btn-origin btn-1" onclick="goHome()">
+          ← Exit Quiz
+        </button>
+
+        <button class="btn-origin btn-2" id="nextBtn"
+          onclick="nextQuestion()" disabled>
+          Check Answer
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESULT SCREEN -->
+  <section class="screen" id="resultScreen">
+    <div class="result-box">
+
+      <div class="result-icon" id="resultIcon">🏆</div>
+      <h2 id="resultTitle">Excellent!</h2>
+      <p id="resultMessage">You completed the quiz.</p>
+
+      <div class="score-circle">
+        <strong id="percentage">100%</strong>
+        <small>Your Score</small>
+      </div>
+
+      <div class="result-stats">
+        <div class="stat">
+          <strong id="correctCount" style="color:var(--green)">5</strong>
+          <small>Correct</small>
+        </div>
+        <div class="stat">
+          <strong id="wrongCount" style="color:var(--red)">0</strong>
+          <small>Incorrect</small>
+        </div>
+        <div class="stat">
+          <strong id="totalCount">5</strong>
+          <small>Total</small>
+        </div>
+      </div>
+
+      <div class="review">
+        <h3>📋 Answer Review</h3>
+        <div id="reviewList"></div>
+      </div>
+
+      <div class="result-buttons">
+        <button class="btn btn-secondary" onclick="goHome()">
+          ← Choose Another Quiz
+        </button>
+        <button class="btn btn-primary" onclick="restartQuiz()">
+          ↻ Try Again
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="./JS/Quiz.js"></script>
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Personal Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./CSS/About Me.css">
+
+</head>
+
+<body>
+
+<!-- MAIN SECTION -->
+<main class="container" id="about">
+
+    <!-- LEFT CONTENT -->
+    <section class="content">
+
+        <div class="tag">
+            <i></i>
+            GET TO KNOW ME
+        </div>
+
+        <h1>
+            Hello, I'm<br>
+            <span>Chuu Myat.</span>
+        </h1>
+
+        <p class="subtitle">
+            STUDENT &nbsp; | &nbsp; WEB DEVELOPER | &nbsp; DESIGNER.
+        </p>
+
+        <p class="description">
+            I'm a passionate student who loves technology,
+            creativity, and building meaningful digital
+            experiences. I enjoy turning ideas into reality
+            through coding, design, and continuous learning.
+            My goal is to explore new possibilities and
+            create something extraordinary.
+        </p>
+
+        <div class="skills" id="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">UI / UX Design</span>
+            <span class="skill">Creative Thinking</span>
+        </div>
+
+        <div class="buttons">
+            <a href="mailto:hello@example.com" class="btn btn-primary">
+                CONTACT ME ↗
+            </a>
+
+            <a href="#card" class="btn btn-outline">
+                VIEW MY ID ↓
+            </a>
+        </div>
+
+    </section>
+
+    <!-- RIGHT 3D ID CARD -->
+    
+<section class="card-area">
+
+    <div class="hanging-id" id="hangingID">
+
+        <!-- LANYARD STRING -->
+        <svg class="lanyard" viewBox="0 0 400 330"
+             preserveAspectRatio="none">
+
+            <defs>
+                
+                <linearGradient id="ropeGradient" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#8B5CF6"/>
+                    <stop offset="50%" stop-color="#00D9FF"/>
+                    <stop offset="100%" stop-color="#8B5CF6"/>
+                </linearGradient>
+            </defs>
+
+            <!-- Back strap -->
+            <path d="M125 0
+                     C125 135 275 135 275 0"
+                  fill="none"
+                  stroke="#043E52"
+                  stroke-width="15"
+                  stroke-linecap="round"/>
+
+            <!-- Main strap -->
+            <path id="ropePath"
+                  d="M125 0
+                     C125 135 275 135 275 0"
+                  fill="none"
+                  stroke="url(#ropeGradient)"
+                  stroke-width="10"
+                  stroke-linecap="round"/>
+
+            <!-- Rope highlight -->
+            <path d="M125 0
+                     C125 135 275 135 275 0"
+                  fill="none"
+                  stroke="#A9F8FF"
+                  stroke-width="2"
+                  opacity=".65"
+                  stroke-linecap="round"/>
+
+        </svg>
+
+        <!-- ROPE CONNECTOR -->
+        <div class="rope-connector">
+
+            <div class="metal-ring"></div>
+
+            <div class="metal-hook">
+                <div class="hook-inner"></div>
+            </div>
+
+        </div>
+
+        <!-- ID CARD -->
+        <div class="id-card-3d" id="idCard">
+
+            <div class="card-face">
+
+                <div class="id-header">
+                    <div class="id-logo">MY<span>SPACE.</span></div>
+                    <div class="id-label">IDENTITY CARD</div>
+                </div>
+
+                <div class="id-photo">
+                    <img src="./Photo/My photo 3.png" alt="Profile">
+                </div>
+
+                <h2>Chuu Myat</h2>
+
+                <p class="id-role">STUDENT / WEB DEVELOPER / DESIGNER</p>
+
+                <div class="id-divider"></div>
+
+                <div class="id-details">
+                    <div>
+                        <small>ID NUMBER</small>
+                        <p>2026-1811</p>
+                    </div>
+
+                    <div>
+                        <small>LOCATION</small>
+                        <p>MYANMAR</p>
+                    </div>
+
+                    <div>
+                        <small>INTEREST</small>
+                        <p>TECHNOLOGY</p>
+                    </div>
+
+                    <div>
+                        <small>STATUS</small>
+                        <p class="active">● ACTIVE</p>
+                    </div>
+                </div>
+
+                <div class="id-footer">
+                    <span>MYSPACE DIGITAL ID</span>
+                    <span>2026</span>
+                </div>
+
+            </div>
+
+            <!-- BACK SIDE -->
+            <div class="card-back">
+                <div class="back-logo">MY<span>SPACE.</span></div>
+                <div class="back-chip"></div>
+                <h2>IDENTITY VERIFIED</h2>
+                <p>CREATIVITY · TECHNOLOGY · FUTURE</p>
+                <div class="back-code">MS-2026-001</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="drag-hint">↔ DRAG TO INTERACT WITH ID CARD</p>
+
+</section>
+
+</main>
+
+<script src="./JS/About Me.js"></script>
+
+</body>
+</html>

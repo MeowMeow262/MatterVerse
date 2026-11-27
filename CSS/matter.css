@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #010207;
+}
+
+/* Font */
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.allerta-stencil-regular {
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* End Font */
+.first-card{
+   background: #020d1c;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 139, 0.403);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    margin: 50px;
+}
+.text-1{
+ font-size: 50px !important;
+ color: rgb(165, 0, 165);
+
+}
+.text-justify{
+    text-align: justify;
+}
+@media screen and (max-width: 768px) {
+    .text-1{
+        padding-top: 15px;
+    }
+    .text-justify{
+        text-align: left;
+    }
+    .first-card{
+        margin: 50px 12px;
+    }
+}

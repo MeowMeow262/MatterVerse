@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font */
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.allerta-stencil-regular {
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sedan-sc-regular {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.museomoderno{
+  font-family: "MuseoModerno", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.coverBtn{
+  width: 100%;
+  height: 100vh;
+  background-color: #A2B4C8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.coverBg{
+  width: 95%;
+  height: 90vh;
+  background-color: #15333B;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  width: 25%;
+  height: 500px;
+  background-color: #08111E;
+  padding: 30px;
+  border-radius: 30px;
+}
+.card-title{
+  font-size: 45px;
+  color: #86D2FF;
+  width: 300px;
+}
+.card-text{
+  width: 350px;
+  color: #A2B4C8;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.text-7{
+  padding: 12px 10px;
+  border: 5px solid #ffb700;
+  background-color: #ffb70084;
+  text-decoration: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 8px;
+}
+.position-img{
+  width: 30%;
+  height: 45%;
+  /* background-color: rgba(46, 139, 86, 0.778); */
+}
+.img-1{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: rgba(0, 0, 0, 0.427) 0px 19px 38px, rgba(0, 0, 0, 0.347) 0px 15px 12px;
+}
+.img-2{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* position: absolute; */
+  /* top: 80px; */
+  /* right: 80px; */
+}
+.img-3{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* position: absolute; */
+  /* top: 80px; */
+  /* right: 80px; */
+}
+.img-4{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.img-5{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.icon{
+  position: absolute;
+  z-index: 1000;
+  font-size: 45px;
+  top: 0;
+  right: 15px;
+  color: #fff;
+  /* display: block; */
+}
+@media screen and (max-width: 768px) {
+  .coverBg{
+    flex-wrap: wrap;
+    /* height: 100vh; */
+  }
+
+  .text-7 {
+    font-size: 14px;
+  }
+
+  .card-title{
+    font-size: 30px;
+  }
+  .card{
+    width: 100%;
+    height: 350px;
+  }
+  .card-text {
+    width: 100%;
+  }
+
+  .position-img{
+    /* background-color: red; */
+    width: 200px;
+    height: 200px;
+  }
+
+  .img-1{
+    width: 150px;
+    height: 150px;
+  }
+
+  .img-2{
+    width: 120px;
+    height: 120px;
+  }
+
+   .img-3{
+    width: 120px;
+    height: 120px;
+  }
+
+   .img-4{
+    width: 120px;
+    height: 120px;
+  }
+
+  .img-5{
+    width: 120px;
+    height: 120px;
+  }
+}

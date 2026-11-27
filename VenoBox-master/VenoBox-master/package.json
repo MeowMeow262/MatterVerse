@@ -1,0 +1,44 @@
+{
+  "name": "venobox",
+  "version": "2.2.1",
+  "description": "Responsive javascript modal window plugin, touch swipe gallery",
+  "type": "module",
+  "main": "dist/venobox.min.js",
+  "module": "src/venobox.esm.js",
+  "browser": "dist/venobox.min.js",
+  "style": "dist/venobox.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolafranchini/VenoBox.git"
+  },
+  "scripts": {
+    "build:css": "esbuild src/venobox.css --minify --sourcemap --outfile=dist/venobox.min.css && esbuild src/venobox.css --outfile=dist/venobox.css",
+    "build:js": "rollup -c",
+    "build": "npm run build:css && npm run build:js",
+    "dev": "rollup -c -w"
+  },
+  "keywords": [
+    "lightbox",
+    "modal",
+    "responsive",
+    "plugin",
+    "popup",
+    "gallery",
+    "window",
+    "no-jquery",
+    "vanilla",
+    "touch",
+    "swipe"
+  ],
+  "author": "Nicola Franchini (https://veno.es/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicolafranchini/VenoBox/issues"
+  },
+  "homepage": "https://veno.es/venobox/",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^1.0.0",
+    "esbuild": "^0.28.2",
+    "rollup": "^2.79.0"
+  }
+}
