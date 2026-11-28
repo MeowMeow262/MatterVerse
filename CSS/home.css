@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background: #08111E;
+}
 
 /* font */
 
@@ -59,14 +62,14 @@
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
 }
-.logo {
-  width: 180px;
-  margin-left: 20px;
-}
 
-/* home */
-body{
-  background: #08111E;
+/* Navbar */
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #35C2E8;
+  text-decoration: none;
+  padding-left: 15px;
 }
 nav{
   position: sticky !important;
@@ -75,7 +78,6 @@ nav{
 
 .navbar{
   background-color: #0b1625
-  border-bottom: 1px solid rgba(159,179,200,.15);
 
 }
 .nav-text{
@@ -88,7 +90,11 @@ nav{
   padding: 7px 14px;
   border-radius: 25px;
   margin-right: 50px;
+  text-align: center;
 }
+/* Navbar */
+
+
 
 .img-1{
   width: 380px;
@@ -232,3 +238,4 @@ nav{
 @media (prefers-reduced-motion: reduce) {
   .light-btn .btn-gradient:hover { transform: none }
 }
+

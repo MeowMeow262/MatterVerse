@@ -28,6 +28,67 @@ body{
 }
 
 /* End Font */
+
+/* Navbar */
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #35C2E8;
+  text-decoration: none;
+  padding-left: 15px;
+}
+nav{
+  position: sticky !important;
+  z-index: 2000;
+}
+
+.navbar{
+  background-color: #0b1625
+
+}
+.nav-text{
+  color: #68F4D5 !important;
+}
+.nav-tag {
+  color: #9FB3C8;
+  font-size: 13px;
+  border: 1px solid rgba(159,179,200,.15);
+  padding: 7px 14px;
+  border-radius: 25px;
+  margin-right: 50px;
+  text-align: center;
+}
+/* Navbar */
+
+/* BTN */
+.light-btn{
+  padding: 15px 25px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.btn-gradient{
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef);
+  background-size: 200% 200%;
+  transition: all 0.5s ease;
+}
+
+.btn-gradient:hover {
+  background-position: 100% 100%;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
+}
+
+
 .first-card{
    background: #020d1c;
     padding: 40px;

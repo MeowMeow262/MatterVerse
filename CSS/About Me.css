@@ -44,45 +44,38 @@ body::after {
 }
 
 
-/* NAVBAR */
-
-.navbar {
-    width: 100%;
-    padding: 28px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 10;
-}
-
+/* Navbar */
 .logo {
-    font-size: 22px;
-    font-weight: 900;
-    letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #35C2E8;
+  text-decoration: none;
+  padding-left: 15px;
+}
+nav{
+  position: sticky !important;
+  z-index: 2000;
 }
 
-.logo span,
-.id-logo span,
-.back-logo span {
-    color: var(--cyan);
-}
+.navbar{
+  background-color: #0b1625
 
-.nav-links {
-    display: flex;
-    gap: 35px;
 }
+.nav-text{
+  color: #68F4D5 !important;
+}
+.nav-tag {
+  color: #9FB3C8;
+  font-size: 13px;
+  border: 1px solid rgba(159,179,200,.15);
+  padding: 7px 14px;
+  border-radius: 25px;
+  margin-right: 50px;
+  text-align: center;
+}
+/* Navbar */
 
-.nav-links a {
-    text-decoration: none;
-    color: var(--muted);
-    font-size: 13px;
-    transition: .3s;
-}
 
-.nav-links a:hover {
-    color: var(--cyan);
-}
 
 /* MAIN LAYOUT */
 

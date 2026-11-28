@@ -61,14 +61,21 @@ html {
   overflow: hidden;
 }
 
+/* Navbar */
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #35C2E8;
+  text-decoration: none;
+  padding-left: 15px;
+}
 nav{
   position: sticky !important;
-  top: 15px !important;
   z-index: 2000;
 }
+
 .navbar{
-  background-color: #0b1625;
-  border-bottom: 1px solid rgba(159,179,200,.15);
+  background-color: #0b1625
 
 }
 .nav-text{
@@ -81,12 +88,11 @@ nav{
   padding: 7px 14px;
   border-radius: 25px;
   margin-right: 50px;
+  text-align: center;
 }
-.logo {
-  width: 180px;
-  margin-left: 20px;
-  
-}
+/* Navbar */
+
+
 /* Explorer Matter */
 .section-1{
   width: 100%;

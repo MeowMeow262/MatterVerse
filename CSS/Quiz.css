@@ -19,17 +19,53 @@
   box-sizing: border-box;
 }
 
-.logo {
-  width: 180px;
-  margin-left: 20px; 
-}
+/* font */
 
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.allerta-stencil-regular {
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.redaction-50-regular {
+  font-family: "Redaction 50", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.museomoderno{
+  font-family: "MuseoModerno", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* font */
+
+/* Navbar */
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #35C2E8;
+  text-decoration: none;
+  padding-left: 15px;
+}
 nav{
   position: sticky !important;
   z-index: 2000;
 }
+
 .navbar{
-  border-bottom: 1px solid rgba(159,179,200,.15);
+  background-color: #0b1625
 
 }
 .nav-text{
@@ -42,15 +78,9 @@ nav{
   padding: 7px 14px;
   border-radius: 25px;
   margin-right: 50px;
+  text-align: center;
 }
-
-.nav-tag {
-  color: var(--secondary);
-  font-size: 13px;
-  border: 1px solid var(--border);
-  padding: 9px 16px;
-  border-radius: 30px;
-}
+/* Navbar */
 
 /* BACKGROUND DECORATION */
 
